@@ -236,6 +236,8 @@ def merge_centralities():
 
 
 def main():
+    print(f'Started at {dt.datetime.now()}')
+
     # read network
     roads_G = nx.read_gml('data/network/BMA_road_network.gml')
     roads_df = pd.read_csv('data/network/BMA_roads.csv')
