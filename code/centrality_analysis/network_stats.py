@@ -253,48 +253,48 @@ def main():
     # bridge collapse
     roads_wo_bridge_G = roads_G.copy()
     destroyed_edges = roads_df[roads_df['highway'] == 'destroyed']
-    destroyed_edges = list(zip(destroyed_edges['u'].astype(str), destroyed_edges['v'].astype(str))) # start and end nodes
+    destroyed_edges = list(zip(destroyed_edges['u'], destroyed_edges['v'])) # start and end nodes
     roads_wo_bridge_G.remove_edges_from(destroyed_edges) # python multiprocessing doesn't share state
 
     # network stats (using multiprocessing so its not slow asf)
     eigcent_w_bridge_p = Process(target=eigenvector_centrality, args=(roads_G, False)) #setup processes
-    betcent_w_bridge_p = Process(target=betweenness_centrality, args=(roads_G, False))
-    clocent_w_bridge_p = Process(target=closeness_centrality, args=(roads_G, False))
-    spaths_w_bridge_p = Process(target=all_shortest_paths, args=(roads_G, False))
+    # betcent_w_bridge_p = Process(target=betweenness_centrality, args=(roads_G, False))
+    # clocent_w_bridge_p = Process(target=closeness_centrality, args=(roads_G, False))
+    # spaths_w_bridge_p = Process(target=all_shortest_paths, args=(roads_G, False))
 
     # network stats after collapse
     eigcent_wo_bridge_p = Process(target=eigenvector_centrality, args=(roads_wo_bridge_G, True)) #setup processes
-    betcent_wo_bridge_p = Process(target=betweenness_centrality, args=(roads_wo_bridge_G, True))
-    clocent_wo_bridge_p = Process(target=closeness_centrality, args=(roads_wo_bridge_G, True))
-    spaths_wo_bridge_p = Process(target=all_shortest_paths, args=(roads_wo_bridge_G, True))
+    # betcent_wo_bridge_p = Process(target=betweenness_centrality, args=(roads_wo_bridge_G, True))
+    # clocent_wo_bridge_p = Process(target=closeness_centrality, args=(roads_wo_bridge_G, True))
+    # spaths_wo_bridge_p = Process(target=all_shortest_paths, args=(roads_wo_bridge_G, True))
 
-    stratcent_p = Process(target=straightness_centrality, args=(intersections_df,))
+    # stratcent_p = Process(target=straightness_centrality, args=(intersections_df,))
 
     eigcent_w_bridge_p.start() # start processes
-    betcent_w_bridge_p.start()
-    clocent_w_bridge_p.start()
-    spaths_w_bridge_p.start()
+    # betcent_w_bridge_p.start()
+    # clocent_w_bridge_p.start()
+    # spaths_w_bridge_p.start()
     eigcent_wo_bridge_p.start()
-    betcent_wo_bridge_p.start()
-    clocent_wo_bridge_p.start()
-    spaths_wo_bridge_p.start()
+    # betcent_wo_bridge_p.start()
+    # clocent_wo_bridge_p.start()
+    # spaths_wo_bridge_p.start()
 
     # wait for shortest paths to calculate, then find straightness
-    spaths_w_bridge_p.join()
-    spaths_wo_bridge_p.join()
+    # spaths_w_bridge_p.join()
+    # spaths_wo_bridge_p.join()
 
     # straightness centrality
-    stratcent_p.start()
+    # stratcent_p.start()
 
     eigcent_w_bridge_p.join() # wait for it all to be done
-    betcent_w_bridge_p.join()
-    clocent_w_bridge_p.join()
+    # betcent_w_bridge_p.join()
+    # clocent_w_bridge_p.join()
     eigcent_wo_bridge_p.join()
-    betcent_wo_bridge_p.join()
-    clocent_wo_bridge_p.join()
-    stratcent_p.join()
+    # betcent_wo_bridge_p.join()
+    # clocent_wo_bridge_p.join()
+    # stratcent_p.join()
 
-    merge_centralities()
+    # merge_centralities()
     print('Done')
 
 

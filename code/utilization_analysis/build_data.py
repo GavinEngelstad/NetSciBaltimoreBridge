@@ -16,6 +16,7 @@ def get_closest_intersection(tracts: gpd.GeoDataFrame
     # get intersections
     intersections = pd.read_csv('data/network/BMA_intersections.csv')
     intersections['geometry'] = intersections['geometry'].apply(wkt.loads)
+    intersections['osmid'] = intersections['osmid'].astype(str)
     intersections = gpd.GeoDataFrame(intersections, geometry='geometry')
 
     for i in tracts.index:
