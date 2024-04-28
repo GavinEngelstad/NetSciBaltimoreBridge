@@ -1,0 +1,16 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'gavin_netsci.blg'
+[39] biber-darwin:340> INFO - === Sun Apr 28, 2024, 01:43:31
+[52] Biber.pm:419> INFO - Reading 'gavin_netsci.bcf'
+[144] Biber.pm:979> INFO - Found 25 citekeys in bib section 0
+[151] Biber.pm:4419> INFO - Processing section 0
+[158] Biber.pm:4610> INFO - Looking for bibtex file 'key_bridge.bib' for section 0
+[159] bibtex.pm:1713> INFO - LaTeX decoding ...
+[170] bibtex.pm:1519> INFO - Found BibTeX data source 'key_bridge.bib'
+[280] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[280] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
+[280] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[280] Biber.pm:4239> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
+[280] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[297] bbl.pm:660> INFO - Writing 'gavin_netsci.bbl' with encoding 'UTF-8'
+[309] bbl.pm:763> INFO - Output to gavin_netsci.bbl

@@ -1,0 +1,985 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{AlJazeera24}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=71c5f45d386774b7ef9ecf0db82f0648}{%
+           family={{Al Jazeera}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{71c5f45d386774b7ef9ecf0db82f0648}
+      \strng{fullhash}{71c5f45d386774b7ef9ecf0db82f0648}
+      \strng{bibnamehash}{71c5f45d386774b7ef9ecf0db82f0648}
+      \strng{authorbibnamehash}{71c5f45d386774b7ef9ecf0db82f0648}
+      \strng{authornamehash}{71c5f45d386774b7ef9ecf0db82f0648}
+      \strng{authorfullhash}{71c5f45d386774b7ef9ecf0db82f0648}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Al Jazeera}
+      \field{title}{What is the economic cost of Baltimore's Key Bridge collapse?}
+      \field{year}{2024}
+    \endentry
+    \entry{Ando20}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=54b9dc77122230395ddd94af3ee15b72}{%
+           family={Ando},
+           familyi={A\bibinitperiod},
+           given={Hiroe},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e4c19502fbaf28b6bbf1d8f253c38be}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e84018f83aa8c109a7f8a2969e8af6d}{%
+           family={Kurauchi},
+           familyi={K\bibinitperiod},
+           given={Fumitaka},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6e981b6881382fb49799fd1e94099f9}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={K.I.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02f3c9f972834716e509aabe42e48085}{%
+           family={Cheung},
+           familyi={C\bibinitperiod},
+           given={Kam-Fung},
+           giveni={K\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fea707223399b7200c3999089f6f3ebd}
+      \strng{fullhash}{c5b2c51942c5434b712b7b66f2d266a0}
+      \strng{bibnamehash}{c5b2c51942c5434b712b7b66f2d266a0}
+      \strng{authorbibnamehash}{c5b2c51942c5434b712b7b66f2d266a0}
+      \strng{authornamehash}{fea707223399b7200c3999089f6f3ebd}
+      \strng{authorfullhash}{c5b2c51942c5434b712b7b66f2d266a0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Transportmetrica A: Transport Science}
+      \field{title}{Connectivity evaluation of large road network by capacity-weighted eigenvector centrality analysis}
+      \field{year}{2020}
+    \endentry
+    \entry{Ando21}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=54b9dc77122230395ddd94af3ee15b72}{%
+           family={Ando},
+           familyi={A\bibinitperiod},
+           given={Hiroe},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e84018f83aa8c109a7f8a2969e8af6d}{%
+           family={Kurauchi},
+           familyi={K\bibinitperiod},
+           given={Fumitaka},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ea5d65ad4786b2b25c4834dc0d10bbed}
+      \strng{fullhash}{ea5d65ad4786b2b25c4834dc0d10bbed}
+      \strng{bibnamehash}{ea5d65ad4786b2b25c4834dc0d10bbed}
+      \strng{authorbibnamehash}{ea5d65ad4786b2b25c4834dc0d10bbed}
+      \strng{authornamehash}{ea5d65ad4786b2b25c4834dc0d10bbed}
+      \strng{authorfullhash}{ea5d65ad4786b2b25c4834dc0d10bbed}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Sustainability}
+      \field{number}{23}
+      \field{title}{How Does Travel Demand Follow the Change in Infrastructure? Multiple-Year Eigenvector Centrality Analysis}
+      \field{volume}{13}
+      \field{year}{2021}
+    \endentry
+    \entry{Barthelemy09}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dccb20a7c90ae422e209daa791149063}{%
+           family={Barthelemy},
+           familyi={B\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2596bc60fbbe46dccfc09ae3fd2522d0}{%
+           family={Flammini},
+           familyi={F\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{47269c887323d85d6381b87b50b71685}
+      \strng{fullhash}{47269c887323d85d6381b87b50b71685}
+      \strng{bibnamehash}{47269c887323d85d6381b87b50b71685}
+      \strng{authorbibnamehash}{47269c887323d85d6381b87b50b71685}
+      \strng{authornamehash}{47269c887323d85d6381b87b50b71685}
+      \strng{authorfullhash}{47269c887323d85d6381b87b50b71685}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Networks and Spatial Economics}
+      \field{title}{Co-evolution of density and topology in a simple model of city formation}
+      \field{volume}{9}
+      \field{year}{2009}
+      \field{pages}{401\bibrangedash 425}
+      \range{pages}{25}
+    \endentry
+    \entry{Boeing17}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6a97e7860ba89ae913db592b29249440}{%
+           family={Boeing},
+           familyi={B\bibinitperiod},
+           given={Geoff},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6a97e7860ba89ae913db592b29249440}
+      \strng{fullhash}{6a97e7860ba89ae913db592b29249440}
+      \strng{bibnamehash}{6a97e7860ba89ae913db592b29249440}
+      \strng{authorbibnamehash}{6a97e7860ba89ae913db592b29249440}
+      \strng{authornamehash}{6a97e7860ba89ae913db592b29249440}
+      \strng{authorfullhash}{6a97e7860ba89ae913db592b29249440}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Computers, Environment and Urban Systems}
+      \field{title}{OSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks}
+      \field{volume}{65}
+      \field{year}{2017}
+      \field{pages}{126\bibrangedash 139}
+      \range{pages}{14}
+    \endentry
+    \entry{Bolton20}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=19384e8eeeff1206820172f739a2e2cf}{%
+           family={Bolton},
+           familyi={B\bibinitperiod},
+           given={Erin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{19384e8eeeff1206820172f739a2e2cf}
+      \strng{fullhash}{19384e8eeeff1206820172f739a2e2cf}
+      \strng{bibnamehash}{19384e8eeeff1206820172f739a2e2cf}
+      \strng{authorbibnamehash}{19384e8eeeff1206820172f739a2e2cf}
+      \strng{authornamehash}{19384e8eeeff1206820172f739a2e2cf}
+      \strng{authorfullhash}{19384e8eeeff1206820172f739a2e2cf}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Baltimore Metropolitan Counci}
+      \field{title}{2012-2016 CTPP worker flows tract to tract (to BMC area)}
+      \field{year}{2020}
+    \endentry
+    \entry{Ding19}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=eb21d1e5710e52f79b0ec4b1bb3ec138}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c13422f4d4ba90d8774f63543e9db42}{%
+           family={Ujang},
+           familyi={U\bibinitperiod},
+           given={Norsidah},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5fc212737725973ecdf6542c39920bfa}{%
+           family={Hamid},
+           familyi={H\bibinitperiod},
+           given={Hussain\bibnamedelima Bin},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c2a63e785ba3e5704e2293edabc3f29}{%
+           family={Manan},
+           familyi={M\bibinitperiod},
+           given={Mohd\bibnamedelimb Shahrudin\bibnamedelima Abd},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd81853acdb66a971c271e27ba65e198}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Rong},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=825256f2cf0cbfc985340569ba23793d}{%
+           family={Albadareen},
+           familyi={A\bibinitperiod},
+           given={Safwan\bibnamedelimb Subhi\bibnamedelima Mousa},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ef2d71bbdfff702a584dd6dae559aea}{%
+           family={Nochian2},
+           familyi={N\bibinitperiod},
+           given={Ashkan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94f1f3fc8ac4b4dabab10150ae28b68b}{%
+           family={Wu4},
+           familyi={W\bibinitperiod},
+           given={Jianjun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{920488a4404a85566e9f6a3d342abd7a}
+      \strng{fullhash}{8e4c1e11d17b4462e6a126ec51987474}
+      \strng{bibnamehash}{8e4c1e11d17b4462e6a126ec51987474}
+      \strng{authorbibnamehash}{8e4c1e11d17b4462e6a126ec51987474}
+      \strng{authornamehash}{920488a4404a85566e9f6a3d342abd7a}
+      \strng{authorfullhash}{8e4c1e11d17b4462e6a126ec51987474}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Networks and Spatial Economics}
+      \field{title}{Application of Complex Networks Theory in Urban Traffic Network Researches}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{pages}{1281\bibrangedash 1317}
+      \range{pages}{37}
+    \endentry
+    \entry{Domen24}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b5d8740d1460d27337914eb8c9833835}{%
+           family={Domen},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b5d8740d1460d27337914eb8c9833835}
+      \strng{fullhash}{b5d8740d1460d27337914eb8c9833835}
+      \strng{bibnamehash}{b5d8740d1460d27337914eb8c9833835}
+      \strng{authorbibnamehash}{b5d8740d1460d27337914eb8c9833835}
+      \strng{authornamehash}{b5d8740d1460d27337914eb8c9833835}
+      \strng{authorfullhash}{b5d8740d1460d27337914eb8c9833835}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{WTOP News}
+      \field{title}{How have drivers adjusted to the collapse of the Key Bridge? A look at the data}
+      \field{year}{2024}
+    \endentry
+    \entry{Erath09}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b73344c244dee0ed749bfc7b25fbf464}{%
+           family={Erath},
+           familyi={E\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3c488f03b93f030c548cb134f54afb6}{%
+           family={Löchl},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6714cff9b29857a4c9c40a8d29c1d4b}{%
+           family={Axhausen},
+           familyi={A\bibinitperiod},
+           given={Kay\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2903230c4bd834a12272d745b67c1290}
+      \strng{fullhash}{2903230c4bd834a12272d745b67c1290}
+      \strng{bibnamehash}{2903230c4bd834a12272d745b67c1290}
+      \strng{authorbibnamehash}{2903230c4bd834a12272d745b67c1290}
+      \strng{authornamehash}{2903230c4bd834a12272d745b67c1290}
+      \strng{authorfullhash}{2903230c4bd834a12272d745b67c1290}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Networks and Spatial Economics}
+      \field{title}{Graph-Theoretical Analysis of the Swiss Road and Railway Networks Over Time}
+      \field{volume}{9}
+      \field{year}{2009}
+      \field{pages}{379\bibrangedash 400}
+      \range{pages}{22}
+    \endentry
+    \entry{Esri}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8d70c7a36d3a99961562d65a7adaeb5e}{%
+           family={Esri},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d70c7a36d3a99961562d65a7adaeb5e}
+      \strng{fullhash}{8d70c7a36d3a99961562d65a7adaeb5e}
+      \strng{bibnamehash}{8d70c7a36d3a99961562d65a7adaeb5e}
+      \strng{authorbibnamehash}{8d70c7a36d3a99961562d65a7adaeb5e}
+      \strng{authornamehash}{8d70c7a36d3a99961562d65a7adaeb5e}
+      \strng{authorfullhash}{8d70c7a36d3a99961562d65a7adaeb5e}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ArcGIS Network Analyst Extension}
+      \verb{urlraw}
+      \verb \url{https://www.esri.com/en-us/arcgis/products/arcgis-network-analyst/overview}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://www.esri.com/en-us/arcgis/products/arcgis-network-analyst/overview%7D
+      \endverb
+    \endentry
+    \entry{Hassan24}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e9cea2ba6c9fee7024890c3ecd9607f2}{%
+           family={Hassan},
+           familyi={H\bibinitperiod},
+           given={Adeel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8dd7994c8c12f8858525bfe9f42c33d}{%
+           family={Edmonds},
+           familyi={E\bibinitperiod},
+           given={Colbi},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b472819602957bc7ee85153e157944c3}
+      \strng{fullhash}{b472819602957bc7ee85153e157944c3}
+      \strng{bibnamehash}{b472819602957bc7ee85153e157944c3}
+      \strng{authorbibnamehash}{b472819602957bc7ee85153e157944c3}
+      \strng{authornamehash}{b472819602957bc7ee85153e157944c3}
+      \strng{authorfullhash}{b472819602957bc7ee85153e157944c3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{New York Times}
+      \field{title}{What We Know About the Francis Scott Key Bridge Collapse in Baltimore}
+      \field{year}{2024}
+    \endentry
+    \entry{Holme02}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6fbf62dda7acce7a201e5324c44e2345}{%
+           family={Holme},
+           familyi={H\bibinitperiod},
+           given={Petter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=113a7e3b341b34d4002c39c451630f98}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Beom\bibnamedelima Jun},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b16f13183558a6f262d015eaa3e8ebf}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Chang\bibnamedelima No},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=140a65784659d27290fbc33034b09be4}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Seung\bibnamedelima Kee},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{88c91c16923808a128d555e4752a383c}
+      \strng{fullhash}{f1a51329a1506a6b1bbb8ee3c124cf77}
+      \strng{bibnamehash}{f1a51329a1506a6b1bbb8ee3c124cf77}
+      \strng{authorbibnamehash}{f1a51329a1506a6b1bbb8ee3c124cf77}
+      \strng{authornamehash}{88c91c16923808a128d555e4752a383c}
+      \strng{authorfullhash}{f1a51329a1506a6b1bbb8ee3c124cf77}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Physical Review E}
+      \field{title}{Attack vulnerability of complex networks}
+      \field{volume}{65}
+      \field{year}{2002}
+    \endentry
+    \entry{Jayaweera17}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a04fb6e7681443bebec9e7d065a5b39a}{%
+           family={Jayaweera},
+           familyi={J\bibinitperiod},
+           given={I.M.L.N.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7135c1e797c9b72362ce0e7486084f5}{%
+           family={Perera},
+           familyi={P\bibinitperiod},
+           given={K.K.K.R.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4e1937b3401d125ec2f3e3cd681c557}{%
+           family={Munasinghe},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{379bd2837e568200bd675c90e2aee109}
+      \strng{fullhash}{379bd2837e568200bd675c90e2aee109}
+      \strng{bibnamehash}{379bd2837e568200bd675c90e2aee109}
+      \strng{authorbibnamehash}{379bd2837e568200bd675c90e2aee109}
+      \strng{authornamehash}{379bd2837e568200bd675c90e2aee109}
+      \strng{authorfullhash}{379bd2837e568200bd675c90e2aee109}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issue}{2}
+      \field{journaltitle}{IOSR Journal of Mathematics}
+      \field{title}{Centrality Measures to Identify Traffic Congestion on Road Networks: A Case Study of Sri Lanka}
+      \field{volume}{13}
+      \field{year}{2017}
+      \field{pages}{13\bibrangedash 19}
+      \range{pages}{7}
+    \endentry
+    \entry{Julliard15}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=85a51367c2d486a45c53bd5ba9981c84}{%
+           family={Julliard},
+           familyi={J\bibinitperiod},
+           given={Ralihalizara},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=64e2181d32d40f589db3524003174553}{%
+           family={Yun},
+           familyi={Y\bibinitperiod},
+           given={Professor\bibnamedelima Jun},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe4847767475f33e276f39de6c2378f4}{%
+           family={Rado},
+           familyi={R\bibinitperiod},
+           given={Dr.\bibnamedelimi Ranaivoson},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ef2c1641effd41cc5ae1ce308d22066}
+      \strng{fullhash}{2ef2c1641effd41cc5ae1ce308d22066}
+      \strng{bibnamehash}{2ef2c1641effd41cc5ae1ce308d22066}
+      \strng{authorbibnamehash}{2ef2c1641effd41cc5ae1ce308d22066}
+      \strng{authornamehash}{2ef2c1641effd41cc5ae1ce308d22066}
+      \strng{authorfullhash}{2ef2c1641effd41cc5ae1ce308d22066}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issue}{3}
+      \field{journaltitle}{International Journal of Advancements in Research \& Technology}
+      \field{title}{Robustness of Transportation Networks: The Case of Madagascar's Road Network}
+      \field{volume}{4}
+      \field{year}{2015}
+    \endentry
+    \entry{Kaub24}{inbook}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=09c64bd5a2dee45cc66c6cb95a4a5b73}{%
+           family={Kaub},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb2a50203306eb82b229e30fafb30ff0}{%
+           family={Lohr},
+           familyi={L\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2bad18d79f1bd182f48848e8747d3d18}{%
+           family={David},
+           familyi={D\bibinitperiod},
+           given={Anelyse\bibnamedelima Reis},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8742f0cab0d53ef520efbe45012fb2c3}{%
+           family={Chandan},
+           familyi={C\bibinitperiod},
+           given={Monotosch\bibnamedelimb Kumar\bibnamedelima Das},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07a73e238daaf73796e263dee46fb745}{%
+           family={Chanekar},
+           familyi={C\bibinitperiod},
+           given={Hilal},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ccd0b22f2fc612d541f779e753d15adf}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Tung},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba9cc75cca72de5926161d62d52aa39d}{%
+           family={Berndt},
+           familyi={B\bibinitperiod},
+           given={Jan\bibnamedelima Ole},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be41a54e70c70234de65062272ec93a6}{%
+           family={Timm},
+           familyi={T\bibinitperiod},
+           given={Ingo\bibnamedelima J.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{569a7ec1a2865bad7d24e9f1920a110c}
+      \strng{fullhash}{43cc728578dda608aaa5f1c017d12718}
+      \strng{bibnamehash}{43cc728578dda608aaa5f1c017d12718}
+      \strng{authorbibnamehash}{43cc728578dda608aaa5f1c017d12718}
+      \strng{authornamehash}{569a7ec1a2865bad7d24e9f1920a110c}
+      \strng{authorfullhash}{43cc728578dda608aaa5f1c017d12718}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Dynamics in Logistics}
+      \field{title}{Shortest-Path-Based Resilience Analysis of Urban Road Networks}
+      \field{year}{2024}
+      \field{pages}{132\bibrangedash 143}
+      \range{pages}{12}
+    \endentry
+    \entry{Masuccia16}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e2a1050170c5506be1de5ccbbaeb85ba}{%
+           family={Masuccia},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi Paolo},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48fb5c4ca2bf8ba231eef65781d8f5c2}{%
+           family={Molinero},
+           familyi={M\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7dd1393fa63f70b5fddbabbcead12941}
+      \strng{fullhash}{7dd1393fa63f70b5fddbabbcead12941}
+      \strng{bibnamehash}{7dd1393fa63f70b5fddbabbcead12941}
+      \strng{authorbibnamehash}{7dd1393fa63f70b5fddbabbcead12941}
+      \strng{authornamehash}{7dd1393fa63f70b5fddbabbcead12941}
+      \strng{authorfullhash}{7dd1393fa63f70b5fddbabbcead12941}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{The European Physical Journal B}
+      \field{number}{53}
+      \field{title}{Robustness and closeness centrality for self-organized and planned cities}
+      \field{volume}{89}
+      \field{year}{2016}
+    \endentry
+    \entry{MDOT24}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=84bea425463ac4d3f27a22777b45a941}{%
+           family={MDOT},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{84bea425463ac4d3f27a22777b45a941}
+      \strng{fullhash}{84bea425463ac4d3f27a22777b45a941}
+      \strng{bibnamehash}{84bea425463ac4d3f27a22777b45a941}
+      \strng{authorbibnamehash}{84bea425463ac4d3f27a22777b45a941}
+      \strng{authornamehash}{84bea425463ac4d3f27a22777b45a941}
+      \strng{authorfullhash}{84bea425463ac4d3f27a22777b45a941}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Maryland Department Of Transportation State Highway Administration}
+      \field{title}{State Highway Administration Encourages Drivers to Use Real-Time Traffic Map to Plan Commute Following Key Bridge Collapse}
+      \field{year}{2024}
+    \endentry
+    \entry{Parry24}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cad2e56ec74bc235a95119d9235a05d8}{%
+           family={Parry},
+           familyi={P\bibinitperiod},
+           given={Wayne},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cad2e56ec74bc235a95119d9235a05d8}
+      \strng{fullhash}{cad2e56ec74bc235a95119d9235a05d8}
+      \strng{bibnamehash}{cad2e56ec74bc235a95119d9235a05d8}
+      \strng{authorbibnamehash}{cad2e56ec74bc235a95119d9235a05d8}
+      \strng{authornamehash}{cad2e56ec74bc235a95119d9235a05d8}
+      \strng{authorfullhash}{cad2e56ec74bc235a95119d9235a05d8}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Associated Press}
+      \field{title}{Named for 'Star-Spangled Banner' author, Francis Scott Key Bridge was part of Baltimore's identity}
+      \field{year}{2024}
+    \endentry
+    \entry{Porta06b}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=99d7c59b9e48e58c18842ad39bf0205c}{%
+           family={Porta},
+           familyi={P\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=304c1921644bb5119f2d0ccae5fc2fdf}{%
+           family={Crucitti},
+           familyi={C\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=078821b95c399c4ffd8297cb26a8beb5}{%
+           family={Latora},
+           familyi={L\bibinitperiod},
+           given={Vito},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{fullhash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{bibnamehash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{authorbibnamehash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{authornamehash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{authorfullhash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{number}{2}
+      \field{title}{The network analysis of urban streets: A dual approach}
+      \field{volume}{369}
+      \field{year}{2006}
+      \field{pages}{853\bibrangedash 866}
+      \range{pages}{14}
+    \endentry
+    \entry{Porta06}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=99d7c59b9e48e58c18842ad39bf0205c}{%
+           family={Porta},
+           familyi={P\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=304c1921644bb5119f2d0ccae5fc2fdf}{%
+           family={Crucitti},
+           familyi={C\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=078821b95c399c4ffd8297cb26a8beb5}{%
+           family={Latora},
+           familyi={L\bibinitperiod},
+           given={Vito},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{fullhash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{bibnamehash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{authorbibnamehash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{authornamehash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \strng{authorfullhash}{f495fece2a4b2984a2d9b2fd0b8ce224}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Environment and Planning B: Planning and Design}
+      \field{title}{The network analysis of urban streets: a primal approach}
+      \field{volume}{22}
+      \field{year}{2006}
+      \field{pages}{705\bibrangedash 725}
+      \range{pages}{21}
+    \endentry
+    \entry{Porta07}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=99d7c59b9e48e58c18842ad39bf0205c}{%
+           family={Porta},
+           familyi={P\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=078821b95c399c4ffd8297cb26a8beb5}{%
+           family={Latora},
+           familyi={L\bibinitperiod},
+           given={Vito},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=b4b52d85d09295b5c9d47d41d1e6ff99}{%
+           family={Thwaites},
+           familyi={T\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=99d7c59b9e48e58c18842ad39bf0205c}{%
+           family={Porta},
+           familyi={P\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d854198db593957264180419dc2b2c21}{%
+           family={Romice},
+           familyi={R\bibinitperiod},
+           given={Ombretta},
+           giveni={O\bibinitperiod}}}%
+        {{hash=20fd340102b9e48ebdd2c99f27cfc148}{%
+           family={Greaves},
+           familyi={G\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{154d520dc5cb58ded5e05cd71cb9cce7}
+      \strng{fullhash}{154d520dc5cb58ded5e05cd71cb9cce7}
+      \strng{bibnamehash}{154d520dc5cb58ded5e05cd71cb9cce7}
+      \strng{authorbibnamehash}{154d520dc5cb58ded5e05cd71cb9cce7}
+      \strng{authornamehash}{154d520dc5cb58ded5e05cd71cb9cce7}
+      \strng{authorfullhash}{154d520dc5cb58ded5e05cd71cb9cce7}
+      \strng{editorbibnamehash}{c83a906be4fa8fe1b1d779de2d462ca1}
+      \strng{editornamehash}{0b1acbbcbc27aadec7b53836aaa1b6a4}
+      \strng{editorfullhash}{c83a906be4fa8fe1b1d779de2d462ca1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Urban Sustainability through Environmental Design}
+      \field{title}{Multiple centrality assessment: mapping centrality in networks of urban spaces}
+      \field{year}{2007}
+      \field{pages}{101\bibrangedash 105}
+      \range{pages}{5}
+    \endentry
+    \entry{Sakakibara04}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2bb92359b93b2c9e8c0834c8486b7f9f}{%
+           family={Sakakibara},
+           familyi={S\bibinitperiod},
+           given={Hiroyuki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08a85daf0040b745094138de2ad57475}{%
+           family={Kajitani},
+           familyi={K\bibinitperiod},
+           given={Yoshio},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15bfa770fb4ff8cafc719a52cf779c92}{%
+           family={Okada},
+           familyi={O\bibinitperiod},
+           given={Norio},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e19cc3ec7174d0c3355fa92758d61e2d}
+      \strng{fullhash}{e19cc3ec7174d0c3355fa92758d61e2d}
+      \strng{bibnamehash}{e19cc3ec7174d0c3355fa92758d61e2d}
+      \strng{authorbibnamehash}{e19cc3ec7174d0c3355fa92758d61e2d}
+      \strng{authornamehash}{e19cc3ec7174d0c3355fa92758d61e2d}
+      \strng{authorfullhash}{e19cc3ec7174d0c3355fa92758d61e2d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issue}{5}
+      \field{journaltitle}{Journal of Transportation Engineering}
+      \field{title}{Road Network Robustness for Avoiding Functional Isolation in Disasters}
+      \field{volume}{130}
+      \field{year}{2004}
+    \endentry
+    \entry{Scardoni13}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9adc855d3a2f90f04033da094b522809}{%
+           family={Scardoni},
+           familyi={S\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37575b94b7df4ca8db9e4f897ba9b770}{%
+           family={Laudanna},
+           familyi={L\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=254a912396f5011bbffa9350087b99a2}{%
+           family={Menezes},
+           familyi={M\bibinitperiod},
+           given={Ronaldo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f6126fa008b532004558cb926e703f46}{%
+           family={Evsukoff},
+           familyi={E\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e90f759fd46607d757a85f990861f7f6}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={Marta\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d438ab845e3547081b60ad5097e7e025}
+      \strng{fullhash}{d438ab845e3547081b60ad5097e7e025}
+      \strng{bibnamehash}{d438ab845e3547081b60ad5097e7e025}
+      \strng{authorbibnamehash}{d438ab845e3547081b60ad5097e7e025}
+      \strng{authornamehash}{d438ab845e3547081b60ad5097e7e025}
+      \strng{authorfullhash}{d438ab845e3547081b60ad5097e7e025}
+      \strng{editorbibnamehash}{bce55288d802beaab10bd78fac514cc0}
+      \strng{editornamehash}{bce55288d802beaab10bd78fac514cc0}
+      \strng{editorfullhash}{bce55288d802beaab10bd78fac514cc0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Complex Networks}
+      \field{title}{Identifying Critical Road Network Areas with Node Centralities Interference and Robustness}
+      \field{year}{2013}
+    \endentry
+    \entry{Wang11}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=934460b7ee9b8333369ee2716f6c1b05}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Fahui},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbfd51310be072244769505879f24155}{%
+           family={Antipova},
+           familyi={A\bibinitperiod},
+           given={Anzhelika},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99d7c59b9e48e58c18842ad39bf0205c}{%
+           family={Porta},
+           familyi={P\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a1ffa3ba09672cf4a2869e20ebce534b}
+      \strng{fullhash}{a1ffa3ba09672cf4a2869e20ebce534b}
+      \strng{bibnamehash}{a1ffa3ba09672cf4a2869e20ebce534b}
+      \strng{authorbibnamehash}{a1ffa3ba09672cf4a2869e20ebce534b}
+      \strng{authornamehash}{a1ffa3ba09672cf4a2869e20ebce534b}
+      \strng{authorfullhash}{a1ffa3ba09672cf4a2869e20ebce534b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{issue}{2}
+      \field{journaltitle}{Journal of Transport Geography}
+      \field{title}{Street centrality and land use intensity in Baton Rouge, Louisiana}
+      \field{volume}{19}
+      \field{year}{2011}
+      \field{pages}{285\bibrangedash 293}
+      \range{pages}{9}
+    \endentry
+    \entry{Xeumei10}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4bdd03b85cd247afef80cd5ecf954109}{%
+           family={Xeumei},
+           familyi={X\bibinitperiod},
+           given={Zhou},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b84c3b75dfdc74545b70298696a8d169}{%
+           family={Xiaochen},
+           familyi={X\bibinitperiod},
+           given={Wu},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{204f33b96645bde118ba8c2027286798}
+      \strng{fullhash}{204f33b96645bde118ba8c2027286798}
+      \strng{bibnamehash}{204f33b96645bde118ba8c2027286798}
+      \strng{authorbibnamehash}{204f33b96645bde118ba8c2027286798}
+      \strng{authornamehash}{204f33b96645bde118ba8c2027286798}
+      \strng{authorfullhash}{204f33b96645bde118ba8c2027286798}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{2010 International Conference on Optoelectronics and Image Processing}
+      \field{title}{The Study of Reliability About the Internal Network of Shanghai South Railway Station Based on the Robustness of Complex Networks}
+      \field{year}{2010}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
