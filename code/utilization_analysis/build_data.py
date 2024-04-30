@@ -2,7 +2,7 @@
 Get utilization stats and convert it to a format thats
 compatible with the network
 
-Store everything in dataframes for reference later
+Store everything in csvs for reference later
 '''
 
 from shapely import wkt, distance, centroid

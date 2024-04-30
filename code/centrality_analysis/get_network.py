@@ -14,12 +14,12 @@ def main():
     ## get network
     places =[ # Baltimore Metro Area
         # {'county': 'Anne Arundel County', 'state': 'Maryland', 'country': 'USA'},
-        {'city': 'Baltimore', 'state': 'Maryland', 'country': 'USA'},
+        # {'city': 'Baltimore', 'state': 'Maryland', 'country': 'USA'},
         # {'county': 'Baltimore County', 'state': 'Maryland', 'country': 'USA'},
         # {'county': 'Carroll County', 'state': 'Maryland', 'country': 'USA'},
         # {'county': 'Harford County', 'state': 'Maryland', 'country': 'USA'},
         # {'county': 'Howard County', 'state': 'Maryland', 'country': 'USA'},
-        # {'county': "Queen Anne's County", 'state': 'Maryland', 'country': 'USA'}
+        {'county': "Queen Anne's County", 'state': 'Maryland', 'country': 'USA'}
     ]
     total_roads_G = ox.graph_from_place( # total raods graph
         places,
