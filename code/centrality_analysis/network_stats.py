@@ -5,13 +5,13 @@ Calculates betweeness centrality, closeness centrality, and all
 shortest paths. Saves the results as their own file in 
 `data/network/network_stats` so it can be referenced later
 
-Everything in this file takes many many hours to calculate, so I
+Everything in this file takes about 4 hours to calculate, so I
 suggest just using the values calculated and saved
 '''
 
 from multiprocessing import Process, Manager # multiprocess things (otherwise its hella slow)
 from shapely import wkt, distance
-import igraph as ig
+import igraph as ig # written in c so faster than networkx
 import pandas as pd
 import numpy as np
 
@@ -100,8 +100,8 @@ def get_changed_partners(i: int,
                          G_w_bridge, # roads graph with bridge
                          G_wo_bridge # roads graph without bridge
                          ) -> pd.DataFrame:
-    dists_w_bridge = np.array(G_w_bridge.distances(i, weights='length'))
-    dists_wo_bridge = np.array(G_wo_bridge.distances(i, weights='length'))
+    dists_w_bridge = np.array(G_w_bridge.distances(i, weights='length')[0])
+    dists_wo_bridge = np.array(G_wo_bridge.distances(i, weights='length')[0])
     filter = np.where(dists_w_bridge != dists_wo_bridge)[0] # edge lengths that changed
 
     if len(filter) > 0:
@@ -118,7 +118,7 @@ def get_changed_partners(i: int,
                 'wo_bridge': [np.nan],
             },
             index=pd.MultiIndex.from_tuples(tuples=[(None, None)], names=['u', 'v'])
-        )
+        ).dropna() # empty df
 
     return changed_partners
 
@@ -131,9 +131,15 @@ def get_changed_pairs(G_w_bridge: ig.Graph, # roads graph with bridge
     print(f'Started Getting Changed Pairs at {pd.Timestamp.now()}')
 
     start = pd.Timestamp.now()
-    changed_pairs = pd.concat( # pairs that changes
-        [get_changed_partners(i, G_w_bridge, G_wo_bridge) for i in np.arange(G_w_bridge.vcount())]
-    ).dropna()
+    changed_pairs = [] # keep track of changed paris
+    for i in range(G_w_bridge.vcount()):
+        changed_partners = get_changed_partners(i, G_w_bridge, G_wo_bridge) # get partners
+
+        if len(changed_partners > 0): # if any paris exist
+            changed_pairs.append(changed_partners)
+    changed_pairs = pd.concat( # combine
+        changed_pairs
+    )
     print(f'Found Changed Pairs in {pd.Timestamp.now() - start}')
 
     changed_pairs.to_csv('data/network_stats/changed_pairs.csv')
@@ -147,12 +153,12 @@ def get_avg_spath_len(G_w_bridge: ig.Graph, # roads graph with bridge
     # with bridge
     start = pd.Timestamp.now()
     avg_spath_w_bridge = G_w_bridge.average_path_length(weights='length')
-    print(f'Found Average Path Length With Bridge {pd.Timestamp.now() - start}')
+    print(f'Found Average Path Length With Bridge in {pd.Timestamp.now() - start}')
 
     # without bridge
     start = pd.Timestamp.now()
     avg_spath_wo_bridge = G_wo_bridge.average_path_length(weights='length')
-    print(f'Found Average Path Length Without Bridge {pd.Timestamp.now() - start}')
+    print(f'Found Average Path Length Without Bridge in {pd.Timestamp.now() - start}')
 
     pd.DataFrame({
         'w_bridge': [avg_spath_w_bridge],
@@ -191,8 +197,6 @@ def main():
     # check edges were removed
     assert roads_G.ecount() - roads_wo_bridge_G.ecount() == len(destroyed_edges)
 
-    print(f'Time to get Data: {pd.Timestamp.now() - start}')
-
     # use multithreading
     manager = Manager()
     cent_dict = manager.dict() # store results
@@ -227,6 +231,8 @@ def main():
 
     changed_pairs_p.join() # wait for other processes to end
     avg_spath_len_p.join()
+
+    print(f'Time to get Data: {pd.Timestamp.now() - start}')
 
 
 if __name__ == '__main__':

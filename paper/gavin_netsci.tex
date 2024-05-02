@@ -3,7 +3,7 @@
 
 % --- Packages ---
 \usepackage{amsmath, amsthm, amsfonts, amssymb, hyperref, soul, latexsym, stmaryrd, booktabs} % fonts and characters
-\usepackage{enumitem, ytableau, comment, graphicx, makecell, appendix, titling, scrextend, float, subcaption} % utilities
+\usepackage{enumitem, ytableau, comment, graphicx, makecell, appendix, titling, scrextend, float, subcaption, multirow, placeins, tabularray} % utilities
 \usepackage{tikz, tikz-cd, tikzsymbols, pgfplots} % plots crap
 \pgfplotsset{compat=1.18}
 \usepackage{blkarray} % random math 
@@ -14,6 +14,8 @@
 \makeatletter
 \def\verbatim@processline{%
   \hspace{\myverbindent}\the\verbatim@line\par}
+\usepackage{setspace}
+\doublespacing
 
 
 % --- Formatting ---
@@ -75,7 +77,7 @@
 \maketitle
 
 \begin{abstract}
-    I have absolutely no idea what will go here, but I'll sure as hell put something.
+  This paper used network techniques, especially centrality analysis, to examine the implications of the Francis Scott Key Bridge collapse. We analyze these effects on the road network for the entire Baltimore Metro Area, using intersections as nodes and road segments as edges. We found the global network effects of the collapse were limited, but that there significant local effects on intersections near the bridge on the ability to traverse the network and on routes extending from the bridge on traffic. We also employ a utilization-weighted analysis to find similar but even more localized results.
 \end{abstract}
 
 \section{Introduction}
@@ -84,9 +86,7 @@ On March 26, 2024, the container ship Dali struck one of the concrete supports h
 
 Pre-collapse, the Francis Scott Key Bridge was an essential part of the Baltimore road system. It was the final link completed in Interstate 695, or the Baltimore Beltway, a major highway that wraps around the City of Baltimore. Spanning the Port of Baltimore, the bridge was 1.6 miles (2.6 km) across and the third-longest continuous truss bridge in the world \parencite{Parry24}. Every day, approximately 30 thousand vehicles crossed the bridge, making it an important piece of infrastructure for thousands of commuters every day \parencite{MDOT24}. Post collapse, the Maryland Department of Transportation issued a traffic warning and has observed a 7-11\% increase in traffic along alternate major highway routes across and around the port \parencites{MDOT24}{Domen24}.
 
-% TODO results
-
-This paper will examine the effects of the bridge collapse on the Baltimore Metro Area (BMA) road system using tools from complex network analysis. The rest of the paper will proceed as follows: Section \ref{sec:lit_review} will explore existing literature on the use of complex networks to analyze road network structures and robustness. Section \ref{sec:model} will outline the methods we'll use to analyze the effects of the bridge collapse on the road network. Section \ref{sec:data} will present the data sources that we'll use to create and examine the network. %  Section \ref{sec:results} will give the results to our analysis. Finally, section \ref{sec:concl} will conclude.
+This paper will examine the effects of the bridge collapse on the Baltimore Metro Area (BMA) road system using tools from complex network analysis. The rest of the paper will proceed as follows: Section \ref{sec:lit_review} will explore existing literature on the use of complex networks to analyze road network structures and robustness. Section \ref{sec:model} will outline the methods we'll use to analyze the effects of the bridge collapse on the road network. Section \ref{sec:data} will present the data sources that we'll use to create and examine the network. Section \ref{sec:results} will give the results to our analysis. Finally, section \ref{sec:concl} will conclude.
 
 
 \section{Literature Review} \label{sec:lit_review}
@@ -126,14 +126,14 @@ where $d_{i, j}^\text{Eucl}$ is the Euclidean distance between the points. Intui
 
 To use these centrality measures to analyze robustness, we'll analyze how much they change when the Key Bridge is removed from the network. This gives us a method of analyzing how individual nodes on the network were affected by the bridge collapse and where the most affected nodes are located.
 
-To get an even more specific look at the implications of the collapse, we'll also look at how travel lengths between individual nodes are affected. To do this we'll compare $d_{i, j}$ for all $i, j \in N$ to see which routes were the most affected and what areas of the city these routes go through. This will help give us an idea of which trips the blockage will impact, and, therefore, the types of people that will be the most affected by the blockage.
+To get an even more specific look at the implications of the collapse, we'll also look at how travel lengths between individual nodes are affected. To do this we'll compare $d_{i, j}$ for all $i, j \in N$ to see which routes were the most affected and what areas of the city these routes go through. This will help give us an idea of which trips the collapse will impact, and, therefore, the types of people that will be the most affected by the collapse.
 
 
 \subsection{Network Utilization}
 
 Analysis of the overall structure of the Baltimore road system will give us a general idea of how the network, nodes, and paths were affected by the bridge collapse, but it doesn't take into account how people actually use the road network. People aren't evenly spread throughout a city and equally likely start and end their journeys at all nodes.
 
-To fix this, we'll use commute data to weight trips based on how often the routes are actually being traveled. Using this new measure, we'll look at the average shortest path length and equivalences to betweenness, closeness, and straightness centrality.
+To fix this, we'll use commute data to weight trips based on how often the routes are actually being traveled. Using this new measure, we'll look at the average shortest path length and equivalences to betweenness, closeness, and straightness centrality. Because this new model changes the paths taken instead of the structure of the network, there's no useful analogue to eigenvector centrality.
 
 Our utilization-sensitive shortest path length will be calculated as
 \[
@@ -217,23 +217,161 @@ The dataset includes 678 tracts within the BMA. 672 of these are home to at leas
 We are limited by the granularity of this data. Census tracts are very large compared to the intersection/road segment scale of the network, which means we can't perfectly estimate the paths commuters are taking.\footnote{But definitely is a positive from a privacy standpoint.} In our analysis, we'll estimate paths with commuters starting and ending at the intersection closest to the center-of-mass of the census tracts they're traveling between and assuming all commuters travel along the road network. This should give us a reasonably accurate estimate for how commuters are traveling, although will have some errors, especially closer to the center of mass for the higher-volume census tracts.
 
 
+\section{Results} \label{sec:results}
 
-\section{Results} \label{results}
+\subsection{Network Structure}
+
+The average shortest path length along the network is 26.3 miles (42.3 km) with the bridge and 26.4 miles (42.5 km) without the bridge. That means the destruction of a single road increased the average shortest path length by 0.09 miles (0.14 km). This difference of only 0.003\% is relatively small, and suggests the network-wide implications of the event were small.
+
+At a node level, Figure \ref{fig:cents} shows the calculated centralities for intersections in the BMA with the bridge, without the bridge, and the difference between the two.
 
 
+\begin{figure}[t!]
+  \caption{Node centrality before and after the bridge collapse.}
+  \centering
+  \resizebox{.96\textwidth}{!}{% <------ Don't forget this %
+    \begin{tblr}{%
+      colspec = {cX[c,h]X[c,h]X[c,h]},
+      rowsep = 0pt,
+      colsep = 4pt
+      }
+      & \textbf{Network With Bridge} & \textbf{Network Without Bridge} & \textbf{Difference} \\
+      $C^E$ & \includegraphics[width=0.28\textwidth]{maps/eigenvector_w_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/eigenvector_wo_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/eigenvector_diff.png} \\
+      $C^B$ & \includegraphics[width=0.28\textwidth]{maps/betweenness_w_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/betweenness_wo_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/betweenness_diff.png} \\
+      $C^C$ & \includegraphics[width=0.28\textwidth]{maps/closeness_w_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/closeness_wo_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/closeness_diff.png} \\
+      $C^S$ & \includegraphics[width=0.28\textwidth]{maps/straightness_w_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/straightness_wo_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/straightness_diff.png} \\
+    \end{tblr}
+  } \\
+  {\footnotesize Difference calculated a $C_i^\text{Without Bridge} - C_i^\text{With Bridge}$. Log-scale used for Eigenvector and Betweenness centrality and a symmetric log-scale used for their difference. This meant any nodes with 0 weren't plotted, which was between 9,000 and 35,000 nodes depending on the measure. \\}
+  \label{fig:cents}
+\end{figure}
 
-% \section{Conclusion} \label{sec:concl}
+Both with and without the bridge, the eigenvector centralities are the highest just south of downtown Baltimore. This area has a handful of larger neighborhoods and workplaces (check out the maps on Figure \ref{fig:tracts}) and BWI airport, consistent with the idea that eigenvector centrality is correlated with areas of high use from \cite{Jayaweera17}.
 
-% limitations:
-% no cascade model: there wouldn't be a cascade
-% no lcc, clustering, etc: aren't affected
-% arbitrary boundry
-% high trip spread
+Without the bridge, the centrality effects are spread throughout the network. The nodes near the bridge are the most affected, but throughout the network a connected web of nodes also decreases in centrality, stretching out in all directions. Aside from these, nodes generally face a slight increase in centrality, suggesting the importance of these affected nodes was spread throughout the network, through there are a handful of nodes in Queen Anne's county to the east and downtown that face a disproportionate increase in centrality.
+
+The betweenness centrality is highest for nodes at the center of the network and at the ends of bridges, especially the one connecting Queen Anne's county to the East with the rest of the BMA. From these, there are clear paths of high centrality that extend through the rest of the city. Following \cite{Porta06}, these are likely important paths that are frequently used to traverse the network.
+
+Before it collapsed, the nodes along the Key Bridge were all very important, and paths extended from it along the shore. After the collapse, these nodes became mush less important, shown in the path of purple nodes on the difference graph that crosses the bridge and stretches up and down the coast. Instead, paths of increased centrality extend from the Fort McHenry Tunnel (I-95) and the Harbor Tunnel (I-895), which crosses the port slightly farther inland than the key bridge, and downtown, which sits at the end of the port.
+
+The closeness centrality for both graphs is centered around the downtown area, likely because it sits at the center of the city. From here, it gradually decreases, and is lowest in corners of the city, especially in Queen Anne's county to the East. This highlights the problems with using closeness centrality on a subset of a network, since the inclusion of other counties surrounding the BMA would likely change where this center of mass is. Still, the change in the closeness centrality will still be a meaningful indicator of the network implications of the bridge collapse, since nodes are all located in the same place relative to the boundary of our network before and after the event meaning the bias from this boundary effect should be equivalent on both networks.
+
+The effects of the bridge collapse are almost entirely concentrated near the end of the bridge toward the bay. This makes sense, since, like we saw with the minimal change in average shortest path, places aren't that much farther in general, which would suggest closeness centrality should change by a minimal amount for most nodes. The nodes that were affected, however, now have to take a route around the port to get to nodes on the other side, when before they would have just taken the bridge. The nodes to the north were especially affected, likely because their routes south across the port now need to start going north to get around it.
+
+The straightness centrality is fairly uniform across both graphs, except in areas where water makes it hard to get to a large portion of the network. This is especially apparent for Queen Anne's county, where the lowest centrality nodes are. Within the rest of the network, there are paths with slightly higher straightness extending out from the center of the network, suggesting these might be either important routes for traversing the network or important areas within the network \parencites{Porta06}{Wang11}.
+
+Like closeness centrality, the effects of the event on straightness centrality are almost entirely felt by nodes near the event, and especially to the north. The rationale behind this effect is the same: paths that previously would have taken the bridge now have to take a much less direct route around the port, making their path less straight.
+
+Importantly, the bridge collapse didn't benefit the closeness of straightness for any intersections in the network. This makes sense, since the shortest path can't ever be made shorter by removing an edge from the network, but does contrast the other two centralities where there are winning and losing nodes.
+
+Altogether, our MCA analysis suggests that the effects to the bridge collapse on the ability to travel from a node across the network are concentrated closer to the event, but global effects are seen in the specific paths taken that affect traffic through would-be-unaffected intersections.
+
+To analyze the affected paths, we'll focus on the 475 million paths that were impacted, roughly 0.57\% of the possible paths in the total network. This is done both for tractability reasons, there are more than 80 billion node-to-node paths in the network as a whole which would pose significant problems for computability, and analysis reasons, since the effect of these 99.43\% of paths that are unaffected is seen in the minuscule change in the average shortest path length. These shortest paths are shown in Figure \ref{fig:spaths}.
+
+\begin{figure}[t!]
+	\caption{Changes in shortest paths}
+  \begin{subfigure}{0.49\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{maps/no_changed_paths.png}
+    \caption{Total number of longer shortest paths starting at each node}
+  \end{subfigure}
+  \begin{subfigure}{0.49\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{maps/dist_changed_paths.png}
+    \caption{Total difference in distance for all shortest paths starting at each node}
+  \end{subfigure}
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{graphs/path_dists.pdf}
+    \caption{Difference in distance traveled along path}
+  \end{subfigure}
+
+  \label{fig:spaths}
+\end{figure}
+
+The maps show that nodes all along the coast had significant numbers of paths that would have gone over the bridge and were affected, but these only significantly affect travel distances to other nodes closer to the bridge and the port, since by cutting in at a slight angle someone traveling from farther north or south can get around the port without using the bridge while adding little distance to their route, while someone traveling from closer has to cut straight west first.
+
+The distribution of path distances has a strong right skew and a lot of noise, this suggests that most affected paths weren't lengthened significantly, but a handful were. This suggests the impacts of the bridge collapse are going to be localized to people traveling a handful of routes, and not necessarily felt by everyone in the BMA area.
+
+Summary statistics for this distribution are shown in Table \ref{tab:spaths}. The mean and standard deviation are similar, evidencing the wide spread of the distribution. The mean is larger than the median, which, again, suggests there is a right skew.
+
+\begin{table}
+  \caption{Summary statistics for the difference in affected paths (miles).}
+  \centering
+  \begin{tabular}{cccccccc}
+    \toprule
+    \textbf{Count} & \textbf{Mean}& \textbf{St. Dev.} & \textbf{Min} & \textbf{25\%} & \textbf{Median} & \textbf{75\%} & \textbf{Max} \\
+    \midrule
+    $4.750 \times 10^8$ & 1.525 & 1.514 & $1.864 \times 10^{-6}$ & 0.559 & 1.049 & 2.018 & 15.716 \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:spaths}
+\end{table}
+
+\subsection{Network Utilization}
+
+Based on our model, the average commute to work is 11.43 mi (18.39 km) before the bridge collapsed and 11.44 mi (18.40 km) after. This is less than half of the average shortest path along the network, and suggests that people are choosing to live and work closer together than would be expected if both choices were independent, meaning that our structural analysis might overweight long trips. That means the bridge collapse caused the average commute distance to increase by 0.010 miles or 0.016 km, more than we predicted without the weighting by use, but still a fairly insignificant amount.
+
+For our centrality measures, two of them, closeness and straightness, require flow from the node, meaning we can only find them at a tract level, while the other one, betweenness, is still found at a node-level. These statistics are shown in Figure \ref{fig:use_cents}.
+
+\begin{figure}[b!]
+  \caption{Node centrality before and after the bridge collapse.}
+  \centering
+  \begin{tblr}{%
+    colspec = {cX[c,h]X[c,h]X[c,h]},
+    rowsep = 0pt,
+    colsep = 4pt
+    }
+    & \textbf{Network With Bridge} & \textbf{Network Without Bridge} & \textbf{Difference} \\
+    $C^B$ & \includegraphics[width=0.28\textwidth]{maps/use_betweenness_w_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/use_betweenness_wo_bridge.png} & \includegraphics[width=0.28\textwidth]{maps/use_betweenness_diff.png} \\
+    $C^C$ & \includegraphics[width=0.28\textwidth]{maps/use_closeness_w_bridge.pdf} & \includegraphics[width=0.28\textwidth]{maps/use_closeness_wo_bridge.pdf} & \includegraphics[width=0.28\textwidth]{maps/use_closeness_diff.pdf} \\
+    $C^S$ & \includegraphics[width=0.28\textwidth]{maps/use_straightness_w_bridge.pdf} & \includegraphics[width=0.28\textwidth]{maps/use_straightness_wo_bridge.pdf} & \includegraphics[width=0.28\textwidth]{maps/use_straightness_diff.pdf} \\
+  \end{tblr}
+  {\footnotesize Difference calculated a $C_i^\text{Without Bridge} - C_i^\text{With Bridge}$. Log-scale used for Betweenness centrality and a symmetric log-scale used for its difference. This meant approximately 57,000 nodes with 0 centrality weren't plotted. \\}
+  \label{fig:use_cents}
+\end{figure}
+
+As expected by excluding most nodes as possible origin points, there are quite a few more nodes with 0 betweennesses, making the network more sparse. Still, we see similar patterns as the standard betweenness centrality since high-betweenness paths extend from high-betweenness nodes in the center and near bridges, likely representing important routes to travel along.
+
+The effects of the bridge collapse are much more pronounced on the nodes they affect, but affect less nodes. In Figure \ref{fig:cents}, there are faint routes of different centrality that span the whole network, but here only specific routes, namely along the coast are affected.
+
+Closeness centrality is, again, concentrated around the center, though it tapers off much more quickly. This could be caused by people who live downtown valuing living and working closer together more than those that live in other parts of the city or the suburbs, causing them to be closer to where they work.
+
+The effects of the bridge collapse are even more localized when accounting for use than without. In Figure \ref{fig:cents}, the effects of the collapse can be seen in a wide range of nodes near the bridge, but when accounting for use quite a few census tracts in area with affected nodes are unaffected. The couple tracts that area affected, however, see an effect that's similar in magnitude to before. This suggests only significant amount of people from a couple, nearby tracts cross the bridge in their commute.
+
+The use-weighted straightness centrality exhibits far more variability than before. In Figure \ref{fig:cents}, there is a little variability between nodes within geographic areas, but the variability between geographic areas is far more significant. Here, much of the variability between geographic areas goes away, possibly because people are working near where they live, but within nearby tracts in geographic areas varies significantly more.
+
+Like with closeness, the effects of the collapse are very localized to the area just north of the port near the bridge relative to the network-wide estimations in Figure \ref{fig:cents}. Again, this suggests that only a handful of tracts are home to significant numbers of commuters that used the bridge.
+
+Altogether, our use based analysis suggests that the effects of the collapse are still significant, but very localized to commuters that live in certain areas and that the traffic going through intersections is only affected in a handful of routes, not in a web that spans the network like we found without using use-weighted statistics.
+
+
+\section{Conclusion} \label{sec:concl}
+
+Through our network analysis of the Key Bridge collapse, we found significant local impacts of the Bridge Collapse. On average, paths across the network only increase slightly in length. However, in local areas, especially near the bridge, we see significant impacts. This is evident in the change in closeness and straightness centrality, especially when weighted by use where the impacts become even more localized than would be suggested in an analysis of the network as a whole. The betweenness and eigenvector centralities suggest that the implications of the blockage will propagate and affect traffic and importance for intersections in a web throughout the network, especially along the coast. The origins of affected path lengths again suggest a very localized effect, and the right-skew of the distribution suggests, again, that only specific paths are the most impacted.
+
+The results of our analysis, especially in regard to betweenness centrality, are very consistent with behavior patterns we're observing after the collapse. The Fort McHenry Tunnel and Harbor Tunnel, which we predicted would increase in betweenness due to the event, has experienced a significant increase in traffic \parencite{Domen24}. This consistently with the real world suggests the use of this type of network analysis to examine the road network is valuable and paints an accurate picture of the implications of the event.
+
+
+\subsection{Limitations}
+
+Our analysis has a handful of limitations. Mostly because of the small size of the shock to the network, we don't examine the the change in the size of the largest connected component, the clustering coefficients, or modularity classes and community divisions, factors which are often used in the literature to analyze road network shocks \parencites{Xeumei10}. These simply weren't affected by the removal of a single bridge, so analysis of them that's more in line with other network attack literature would be uninformative.
+
+The network itself also has an arbitrary boundary. We chose the network to include all counties in the BMA area, but the BMA road network isn't completely disconnected from that of the rest of Maryland and United States. In that way, our analysis might not be able to analyze how far the collapse effects propagate, intersections with affected betweenness centrality extended all the way to the north and south of the network, and ignores the significant number of paths that travel between the BMA area and the surrounding counties.
+
+% tracts data, granularity, home to work, other trips
+
+
+\subsection{Future Work}
+
+Future work could work on incorporating other use-related data sources, for example average annual daily traffic, with our network. This would help get a better view of how people's use of the network was affected by the collapse, but isn't feasible until the end of 2024 when these numbers will be released for the time of the collapse.
+
+Future work could also look more at what types of nodes were impacted. Knowing whether these were highways, arterial roads, or side streets could be valuable and help inform how we interpret the effects of the shock.
+
+Our utilization analysis also only looked at paths from work to home, since in this paper we only analyzed the trips people are taking to get to work.
 
 
 \clearpage
 \printbibliography
-
-
 
 \end{document}
