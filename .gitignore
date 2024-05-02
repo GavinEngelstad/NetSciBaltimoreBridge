@@ -461,6 +461,7 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
 
-data/network_stats/changed_pairs.csv
+*/changed_pairs.csv
 
 .vscode
+data/network_stats/changed_pairs.csv
